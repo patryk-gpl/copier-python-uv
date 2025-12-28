@@ -33,7 +33,7 @@ The main template configuration file that defines:
 ├── .copier-answers.yml.jinja    # Answers tracking (templated)
 ├── {{ _copier_conf.answers_file }}.jinja  # Answers file configuration
 │
-├── samples/                     # Example data files (EXCLUDED)
+├── examples/                    # Example data files (EXCLUDED)
 │   └── config-basic.yml         # Sample answers file
 ├── my_tests/                    # Test suite (EXCLUDED)
 │   ├── conftest.py
@@ -48,7 +48,7 @@ The main template configuration file that defines:
 
 Files in these directories are **NOT** copied to generated projects:
 
-- `samples/` - Example configuration and data files
+- `examples/` - Example configuration and data files
 - `my_tests/` - Template validation tests
 - `.git/` - Git metadata (Copier default)
 - `__pycache__/` - Python cache (Copier default)
@@ -127,7 +127,7 @@ Auto-maintained file created in generated projects. Used for:
 
 ### Sample Configuration
 
-`samples/config-basic.yml` provides:
+`examples/config-basic.yml` provides:
 - Example variable values
 - Used with `copier copy --data-file` for non-interactive generation
 - Excluded from generated projects
